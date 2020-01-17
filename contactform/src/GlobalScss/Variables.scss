@@ -1,0 +1,13 @@
+// xx small screen / phone
+$screen-xxs-min:                 392px;
+$screen-xs-min:                  480px;
+$screen-sm-min:                  600px;
+$screen-md-min:                  1080px;
+$screen-lg-min:                  1400px; // Breakpoint
+$screen-lg-min-container:        1200px; // Content width
+$screen-xl-min:                  2000px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);

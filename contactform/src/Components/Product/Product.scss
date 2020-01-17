@@ -1,0 +1,237 @@
+@import '../../globalScss/Variables.scss';
+
+// #quicksearchresults-wrapper {
+//   @media (min-width: $screen-sm-min) {
+//     margin: 0;
+//     width: 100%;
+//   }
+//
+//   @media (min-width: $screen-md-min) {
+//     float: none;
+//     padding: 0;
+//   }
+//
+//   #quicksearchresults {
+//     display: flex;
+//     flex-wrap: wrap;
+//
+//     @media (min-width: $screen-sm-min) {
+//       margin: 0;
+//     }
+//
+//     @media (min-width: $screen-md-min) {
+//       margin: 25px -10px 0 -10px;
+//     }
+//
+//     &.col-3 {
+//       .item {
+//         @media (min-width: $screen-md-min) {
+//           flex: 0 0 33.333333%;
+//           max-width: 33.333333%;
+//         }
+//       }
+//     }
+//
+//     .item {
+//       flex: 0 0 50%;
+//       max-width: 50%;
+//       padding: 3px 3px 20px;
+//       margin: 0;
+//
+//       @media (min-width: $screen-sm-min) {
+//         flex: 0 0 33.333333%;
+//         max-width: 33.333333%;
+//       }
+//
+//       @media (min-width: $screen-md-min) {
+//         flex: 0 0 25%;
+//         max-width: 25%;
+//         padding: 15px;
+//       }
+.Product{
+  justify-content: normal;
+  max-width: 223px;
+  margin: 20px;
+}
+
+a {
+  .media {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .media-left {
+      flex: 0 0 auto;
+      max-width: 100%;
+
+      .item-image {
+        .chooser-discount-flash {
+          &.discounted {
+            display: block;
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            font-size: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            padding: 3px 10px;
+            font-family: "galano-thin";
+            color: #da7a87;
+            width: auto;
+          }
+        }
+
+        .item-flashes {
+          bottom: auto;
+          top: 0;
+
+          .chooser-discount-flash {
+            &.discounted {
+              display: none;
+            }
+          }
+
+          .free-item-flash,
+          .bogof {
+            font-family: "galano-thin";
+            background: #111;
+            color: #fff;
+          }
+
+          .chooser-status-preorder {
+            font-family: "galano-thin";
+            background: #000;
+            color: #fff;
+          }
+
+          .chooser-status-multibuy {
+            background: #000;
+            color: #fff;
+          }
+
+          .product-class {
+            display: none;
+          }
+        }
+
+        .product-class {
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          font-size: 12px;
+          background: rgba(255, 255, 255, 0.9);
+          text-transform: uppercase;
+          padding: 3px 10px;
+          font-family: "galano-thin";
+
+          &--Kids {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .media-body {
+      width: auto;
+      padding: 10px;
+
+      @media (min-width: $screen-sm-min) {
+        padding: 15px 0;
+      }
+
+      @media (min-width: $screen-md-min) {
+        padding: 18px 0;
+      }
+
+      .item-content {
+        @media (min-width: $screen-sm-min) {
+          display: flex;
+          align-items: flex-start;
+          padding: 0 10px;
+        }
+
+        @media (min-width: $screen-md-min) {
+          padding: 0;
+        }
+
+        h4 {
+          font-family: "galano-thin";
+          font-size: 12px;
+          line-height: 14px;
+
+          @media (min-width: $screen-sm-min) {
+            flex: 1;
+          }
+
+          @media (min-width: $screen-md-min) {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+
+        p.item-colour {
+        }
+
+        .thumbSizeSummary {
+          display: none;
+        }
+
+        .thumbContentPrice {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+
+          @media (min-width: $screen-sm-min) {
+            padding: 0;
+            flex-direction: column-reverse;
+          }
+
+          br {
+            display: none;
+          }
+
+          .rrp {
+            font-family: "galano-thin";
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #999;
+
+            @media (min-width: $screen-sm-min) {
+              margin-top: 5px;
+            }
+
+            @media (min-width: $screen-md-min) {
+              font-size: 13px;
+            }
+
+            span {
+              display: none;
+            }
+          }
+
+          .price {
+            margin-right: 6px;
+            font-family: "galano";
+            font-size: 14px;
+            color: #333;
+
+            @media (min-width: $screen-sm-min) {
+              margin-right: 0;
+              margin-left: 10px;
+            }
+
+            @media (min-width: $screen-md-min) {
+              font-size: 13px;
+            }
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//     }
+//   }
+// }
